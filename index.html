@@ -1,57 +1,102 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Vinícius Silva</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vinicius Silva - Portfólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .contact-btn {
+            margin-top: 20px;
+        }
+        section {
+            padding: 40px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #343a40;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Vinícius Lima da Silva</h1>
-        <p>Analista de Sistemas | Desenvolvedor Front-End</p>
-        <nav>
-            <a href="#sobre">Sobre Mim</a>
-            <a href="#experiencia">Experiência</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-    <main>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Analista de Sistemas com experiência em desenvolvimento de sites, aplicativos e sistemas completos. Especialista em tecnologias modernas, incluindo Flutter, Firebase, Node.js e PostgreSQL. Capacidade comprovada em suporte técnico, resolução de problemas complexos e implementação de soluções inovadoras em ambientes ágeis.</p>
-        </section>
-        <section id="experiencia">
-            <h2>Experiência</h2>
-            <ul>
-                <li><strong>Fundação de Apoio Científico e Tecnológico do TO</strong> - Front-End Developer (2024 - Presente)</li>
-                <li><strong>Adaptive Sistemas</strong> - Analista de Suporte Pleno I (2023 - 2024)</li>
-                <li><strong>Palmas Medicamentos LTDA</strong> - Analista de Suporte Jr (2022)</li>
-            </ul>
-        </section>
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <ul>
-                <li><strong>Aplicativo:</strong> Superando Limites</li>
-                <li><strong>Site:</strong> <a href="https://inovafapto.org.br" target="_blank">inovafapto.org.br</a></li>
-            </ul>
-        </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <p>Desenvolvimento Front-End (Dart, JavaScript, Flutter), Banco de Dados (PostgreSQL, SQL), Metodologias Ágeis (Scrum, Kanban), Gestão de Projetos (Trello, Jira).</p>
-        </section>
-        <section id="contato">
-            <h2>Contato</h2>
-            <p><strong>Email:</strong> vinicius4@rede.ulbra.br</p>
-            <p><strong>Telefone:</strong> (63) 99291-7517</p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/viniciuslimadasilvayuichivls" target="_blank">linkedin.com/in/viniciuslimadasilvayuichivls</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Vinícius Silva. Todos os direitos reservados.</p>
-    </footer>
+
+<header>
+    <h1>Vinicius Silva</h1>
+    <p>Analista de Sistemas | Front-End Developer</p>
+</header>
+
+<section id="about" class="container text-center">
+    <h2>Sobre Mim</h2>
+    <p>Especialista em desenvolvimento de sistemas e aplicativos com experiência em Dart, JavaScript, Flutter, e Firebase. Pós-graduando em Engenharia da Computação.</p>
+    <a href="https://api.whatsapp.com/send?phone=5563992917517" target="_blank" class="btn btn-success contact-btn">
+        <i class="fab fa-whatsapp"></i> Fale Comigo no WhatsApp
+    </a>
+</section>
+
+<section id="skills" class="container">
+    <h2 class="text-center">Habilidades</h2>
+    <canvas id="skillsChart" width="400" height="200"></canvas>
+</section>
+
+<section id="experience" class="container">
+    <h2 class="text-center">Experiência</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Front-end Developer na Fundação de Apoio Científico e Tecnológico do Tocantins (FAPTO)</li>
+        <li class="list-group-item">Analista de Suporte Pleno na Adaptive Sistemas</li>
+        <li class="list-group-item">Analista de Redes na Americas Health</li>
+    </ul>
+</section>
+
+<section id="projects" class="container">
+    <h2 class="text-center">Projetos</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Superando Limites (Aplicativo)</li>
+        <li class="list-group-item">inovafapto.org.br (Site)</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Vinicius Silva</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('skillsChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['Dart', 'JavaScript', 'Flutter', 'Firebase', 'SQL', 'Scrum'],
+            datasets: [{
+                label: 'Nível de Proficiência',
+                data: [80, 75, 85, 70, 90, 65],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                r: {
+                    suggestedMin: 0,
+                    suggestedMax: 100
+                }
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
