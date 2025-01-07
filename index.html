@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,147 +9,188 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
         }
+
         header {
             background: #343a40;
-            color: #fff;
+            color: white;
             padding: 20px 0;
             text-align: center;
         }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
         .contact-btn {
             margin-top: 20px;
         }
+
         section {
             padding: 40px 0;
         }
+
         footer {
             text-align: center;
             padding: 20px 0;
             background: #343a40;
-            color: #fff;
+            color: white;
+        }
+
+        .skill-logo {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            height: 50px;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .icon-container img {
+            height: 40px;
+            width: auto;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Vinicius Lima da Silva</h1>
-    <p>Analista de Sistemas | Front-End Developer</p>
-</header>
+    <header>
+        <h1>Vinicius Lima da Silva</h1>
+        <p>Analista de Sistemas | Front-End Developer</p>
+    </header>
 
-<section id="about" class="container text-center">
-    <h2>Sobre Mim</h2>
-    <p>Junior em desenvolvimento de sistemas e aplicativos com experiência em Dart, JavaScript, Flutter, e Firebase. Pós-graduando em Engenharia da Computação.</p>
-    <p>Pleno em Suporte de Sistemas utilizando: Sistemas de chamados como Movidesk, Jira, Zendesk e etc. Além de realizar alterações e consultas no banco de dados PostgreSQL utilizando SQL </p>
-    <a href="https://api.whatsapp.com/send?phone=5563992917517" target="_blank" class="btn btn-success contact-btn">
-        <i class="fab fa-whatsapp"></i> Fale Comigo no WhatsApp
-    </a>
-</section>
+    <section id="about" class="container text-center">
+        <h2>Sobre Mim</h2>
+        <p>Junior em desenvolvimento de sistemas e aplicativos com experiência em Dart, JavaScript, Flutter, e Firebase.
+            Pós-graduando em Engenharia da Computação.</p>
+        <p>Pleno em Suporte de Sistemas utilizando: Sistemas de chamados como Movidesk, Jira, Zendesk e outros, além de
+            realizar alterações e consultas no banco de dados PostgreSQL utilizando SQL.</p>
+        <a href="https://api.whatsapp.com/send?phone=5563992917517" target="_blank" class="btn btn-success contact-btn">
+            <i class="fab fa-whatsapp"></i> Fale Comigo no WhatsApp
+        </a>
+    </section>
 
-<section id="skills" class="container">
-    <h2 class="text-center">Habilidades</h2>
-    <ul class="list-group">
-        <li class="list-group-item">Desenvolvimento Front-End (Dart, JavaScript, Flutter)</li>
-        <li class="list-group-item">Banco de Dados (PostgreSQL, SQL, Cassandra, Oracle)</li>
-        <li class="list-group-item">Metodologias Ágeis (Scrum, Kanban)</li>
-        <li class="list-group-item">Gestão de Projetos (Trello, Jira, Movidesk)</li>
-        <li class="list-group-item">Power BI</li>
-    </ul>
-</section>
+    <section id="skills" class="container">
+        <h2 class="text-center">Habilidades</h2>
+        <div class="icon-container">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        </div>
+    </section>
 
-<section id="education" class="container">
-    <h2 class="text-center">Formação Acadêmica</h2>
-    <ul class="list-group">
-        <li class="list-group-item">
-            <strong>Pós-Graduação em Engenharia da Computação</strong> - UNINTER (2024 - em andamento)
-        </li>
-        <li class="list-group-item">
-            <strong>Pós-Graduação em Games e Gamificação na Educação</strong> - UNINTER (2024 - em andamento)
-        </li>
-        <li class="list-group-item">
-            <strong>Bacharelado em Ciência da Computação</strong> - ULBRA (2017 - 2023)
-        </li>
-        <li class="list-group-item">
-            <strong>Técnico em Mecatrônica</strong> - IFTO (2014 - 2017)
-        </li>
-    </ul>
-</section>
+    <section id="education" class="container">
+        <h2 class="text-center">Formação Acadêmica</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pós-Graduação em Engenharia da Computação</h5>
+                        <p class="card-text">UNINTER (2024)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pós-Graduação em Games e Gamificação na Educação</h5>
+                        <p class="card-text">UNINTER (2024 - em andamento)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bacharelado em Ciência da Computação</h5>
+                        <p class="card-text">ULBRA (2017 - 2023)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="experience" class="container">
-    <h2 class="text-center">Experiência Profissional</h2>
-    <ul class="list-group">
-        <li class="list-group-item">
-            <strong>Front-End Developer Jr</strong> - Fundação FAPTO (Abril 2024 - Presente)
-            <p>Desenvolvimento de sistemas completos, aplicativos e sites utilizando Flutter, Firebase, e outras tecnologias modernas.</p>
-        </li>
-        <li class="list-group-item">
-            <strong>Analista de Suporte Pleno 1</strong> - Adaptive Sistemas (Outubro 2023 - Abril 2024)
-            <p>Suporte técnico para mais de 1.000 empresas, trabalhando com PostgreSQL e metodologias ágeis.</p>
-        </li>
-        <li class="list-group-item">
-            <strong>Analista de Suporte Jr 3</strong> - Adaptive Sistemas (Outubro 2022 - Outubro 2023)
-            <p>Suporte técnico para mais de 1.000 empresas, trabalhando com PostgreSQL e metodologias ágeis.</p>
-        </li>
-        <li class="list-group-item">
-            <strong>Analista de Suporte</strong> - Palmas Medicamentos LTDA (Janeiro 2022 - Outubro 2022)
-            <p>Suporte técnico para as 11 filais do Grupo Palmed em relação aos sistemas: Max Farma (Utilizado pelos representantes de venda .APK), ERP Winthor (Utilizado para toda a gestão de estoque da empresa, sistema da TOTVS em DELPHI) e WMS (Sistema da DELAGE em HTML5) .</p>
-        </li>
-        <li class="list-group-item">
-            <strong>Analista de Redes e Comunicação de dados e Auxiliar de Tasy</strong> - Americas Health (Abril 2021 - Janeiro 2022)
-            <p>Manutenção de redes e suporte técnico em hospitais, incluindo gestão de firewall e sistemas de TI.</p>
-        </li>
+    <section id="experience" class="container">
+        <h2 class="text-center">Experiência Profissional</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Front-End Developer Jr</h5>
+                        <p class="card-text">Fundação FAPTO (Abril 2024 - Presente)</p>
+                        <p>Desenvolvimento de sistemas completos, aplicativos e sites utilizando Flutter, Firebase e
+                            outras tecnologias modernas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <li class="list-group-item">
-            <strong>Técnico Homologador E Supervisor de Tecnologia</strong> - Fundação Cesgranrio (Agosto 2020 - Novembro 2022)
-            <p>Instalar sistema utilizado no Enem Digital 2020, 2021 e 2022 e dar manutenção em computadores que foram utilizados em diversas faculdades em Palmas, além de coordenar o time de auxiliares de tecnologia no dia da aplicação das provas.</p>
-        </li>
-    </ul>
-</section>
+    <section id="projects" class="container">
+        <h2 class="text-center">Projetos</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <img class="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                Superando Limites (Aplicativo)
+            </li>
+            <li class="list-group-item">
+                <img class="skill-logo"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript">
+                <a href="https://inovafapto.org.br" target="_blank">InovaFapto</a> (Site)
+            </li>
+        </ul>
+    </section>
 
-<section id="projects" class="container">
-    <h2 class="text-center">Projetos</h2>
-    <ul class="list-group">
-        <li class="list-group-item">Superando Limites (Aplicativo)</li>
-        <li class="list-group-item"> <a href="https://inovafapto.org.br" target="_blank">InovaFapto</a> (Site)</li>
-    </ul>
-</section>
+    <footer>
+        <p>&copy; 2024 Vinicius Silva</p>
+    </footer>
 
-<section id="charts" class="container">
-    <h2 class="text-center">Gráfico de Habilidades</h2>
-    <canvas id="skillsChart" width="400" height="200"></canvas>
-</section>
-
-<footer>
-    <p>&copy; 2024 Vinicius Silva</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('skillsChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'radar',
-        data: {
-            labels: ['Dart', 'JavaScript', 'Flutter', 'Firebase', 'SQL', 'Scrum'],
-            datasets: [{
-                label: 'Nível de Proficiência',
-                data: [80, 70, 80, 60, 90, 65],
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                r: {
-                    suggestedMin: 0,
-                    suggestedMax: 100
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Dart', 'JavaScript', 'Flutter', 'Firebase', 'SQL', 'Scrum'],
+                datasets: [{
+                    label: 'Nível de Proficiência',
+                    data: [80, 70, 80, 60, 90, 65],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    r: {
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
                 }
             }
-        }
-    });
-</script>
+        });
+    </script>
 
 </body>
+
 </html>
