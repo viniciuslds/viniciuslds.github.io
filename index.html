@@ -103,6 +103,9 @@
             <a href="https://www.linkedin.com/in/viniciuslimadasilvayuichivls/" target="_blank" class="btn btn-primary">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
+            <a href="https://api.whatsapp.com/send?phone=5563992917517" target="_blank" class="btn btn-success">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
         </div>
     </header>
 
@@ -113,9 +116,6 @@
             Especialista em Engenharia da Computação e Games e Gamificação na Educação.</p>
         <p>Pleno em Suporte de Sistemas utilizando: Sistemas de chamados como Movidesk, Jira, Zendesk e outros, além de
             realizar alterações e consultas no banco de dados PostgreSQL utilizando SQL.</p>
-        <a href="https://api.whatsapp.com/send?phone=5563992917517" target="_blank" class="btn btn-success contact-btn">
-            <i class="fab fa-whatsapp"></i> Fale Comigo no WhatsApp
-        </a>
     </section>
 
     <section id="skills" class="container">
@@ -488,36 +488,42 @@
         </ul>
     </section>
 
-
-    <footer>
-        <p>&copy; 2025 Vinicius Silva</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="barChart" width="400" height="200"></canvas>
     <script>
-        const ctx = document.getElementById('skillsChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'radar',
+        const barCtx = document.getElementById('barChart').getContext('2d');
+        new Chart(barCtx, {
+            type: 'bar',
             data: {
                 labels: ['Dart', 'JavaScript', 'Flutter', 'Firebase', 'SQL', 'Scrum'],
                 datasets: [{
                     label: 'Nível de Proficiência',
                     data: [80, 70, 80, 60, 90, 65],
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    borderWidth: 1
+                    backgroundColor: [
+                        '#FF5722',
+                        '#2196F3',
+                        '#4CAF50',
+                        '#FFC107',
+                        '#9C27B0',
+                        '#607D8B'
+                    ]
                 }]
             },
             options: {
                 scales: {
-                    r: {
-                        suggestedMin: 0,
-                        suggestedMax: 100
+                    y: {
+                        beginAtZero: true
                     }
                 }
             }
         });
     </script>
+
+    <footer>
+        <p>&copy; 2025 Vinicius Silva</p>
+    </footer>
+
+
+
 
 </body>
 
