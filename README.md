@@ -73,12 +73,29 @@ npm run preview
 
 ## 🌐 Deploy no GitHub Pages
 
-Este projeto está configurado para deploy fácil no GitHub Pages:
+Este projeto está configurado para deploy automático no GitHub Pages:
 
-1. Faça push do código para um repositório GitHub
-2. Vá em Settings > Pages no repositório
-3. Selecione "GitHub Actions" como source
-4. O deploy será feito automaticamente a cada push na branch main
+### Para repositório pessoal (seu-usuario.github.io)
+1. Crie um repositório com o nome `seu-usuario.github.io`
+2. Altere a base no `vite.config.ts` para `base: mode === "production" ? "/" : "/"`
+3. Faça push do código para a branch main
+4. Vá em Settings > Pages no repositório
+5. Selecione "GitHub Actions" como source
+6. O site estará disponível em `https://seu-usuario.github.io`
+
+### Para repositório de projeto (qualquer nome)
+1. Crie um repositório com qualquer nome (ex: `vinicius-silva-portfolio`)
+2. Mantenha a configuração atual no `vite.config.ts`
+3. Faça push do código para a branch main
+4. Vá em Settings > Pages no repositório
+5. Selecione "GitHub Actions" como source
+6. O site estará disponível em `https://seu-usuario.github.io/nome-do-repositorio`
+
+### Como funciona
+- O GitHub Actions faz o build automático do projeto React
+- Gera os arquivos HTML, CSS e JS estáticos na pasta `dist`
+- Publica automaticamente no GitHub Pages
+- Atualiza a cada push na branch main
 
 ## 📂 Estrutura do Projeto
 
