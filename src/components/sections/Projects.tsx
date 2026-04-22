@@ -166,6 +166,7 @@ export const Projects = () => {
                 mais sobre minha experiência completa.
               </p>
               <Button variant="outline" className="hover-lift">
+                <a href="https://github.com/viniciuslds" target="_blank" rel="noopener noreferrer"></a>
                 Ver Portfolio Completo
               </Button>
             </div>
