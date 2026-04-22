@@ -157,9 +157,10 @@ export const Projects = () => {
                 projetos internos e sistemas corporativos. Entre em contato para saber 
                 mais sobre minha experiência completa.
               </p>
-              <Button variant="outline" className="hover-lift">
-                <a href="https://github.com/viniciuslds" target="_blank" rel="noopener noreferrer"></a>
-                Ver Portfolio Completo
+              <Button variant="outline" className="hover-lift" asChild>
+                <a href="https://github.com/viniciuslds" target="_blank" rel="noopener noreferrer">
+                  Ver Portfolio Completo
+                </a>
               </Button>
             </div>
           </Card>
