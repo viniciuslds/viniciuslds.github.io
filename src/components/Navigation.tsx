@@ -11,7 +11,10 @@ export const Navigation = () => {
     { id: "about", label: "Sobre" },
     { id: "skills", label: "Habilidades" },
     { id: "experience", label: "Experiência" },
+    { id: "education", label: "Formação" },
+    { id: "certifications", label: "Certificados" },
     { id: "projects", label: "Projetos" },
+    { id: "references", label: "Referências" },
     { id: "contact", label: "Contato" },
   ];
 
@@ -45,7 +48,6 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border shadow-soft">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center">
             <button
               onClick={() => scrollToSection("hero")}
@@ -55,7 +57,6 @@ export const Navigation = () => {
             </button>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
@@ -72,7 +73,6 @@ export const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="outline" size="sm" className="hover-glow">
               <Download className="w-4 h-4 mr-2" />
@@ -80,7 +80,6 @@ export const Navigation = () => {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
               variant="ghost"
@@ -92,7 +91,6 @@ export const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-3">
