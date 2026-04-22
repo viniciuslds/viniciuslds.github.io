@@ -139,14 +139,6 @@ export const Projects = () => {
                       </a>
                     </Button>
                   )}
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="hover-glow"
-                  >
-                    <Github className="w-3 h-3 mr-2" />
-                    Código
-                  </Button>
                 </div>
               </div>
             </Card>
