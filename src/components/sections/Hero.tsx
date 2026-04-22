@@ -25,7 +25,7 @@ export const Hero = () => {
                   <span className="text-gradient-tech">Vinícius Silva</span>
                 </h1>
                 <h2 className="text-xl md:text-2xl text-primary font-semibold">
-                  Desenvolvedor Full Stack
+                  Desenvolvedor Full Stack - Analista de Suporte Pleno (N2)
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl">
                   Especializado em Flutter, Python/Django, JavaScript/Node.js e tecnologias modernas. 
