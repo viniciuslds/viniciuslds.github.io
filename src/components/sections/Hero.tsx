@@ -28,7 +28,7 @@ export const Hero = () => {
                   Desenvolvedor Full Stack - Analista de Suporte Pleno (N2)
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl">
-                  Especializado em Flutter, Python/Django, JavaScript/Node.js e tecnologias modernas. 
+                  Especializado em Flutter, Python/Django, JavaScript/Node.js e tecnologias modernas, além de ampla experiência em análise e resolução de problemas de sistemas ERP.
                   Criando soluções inovadoras em Palmas, Tocantins.
                 </p>
               </div>
