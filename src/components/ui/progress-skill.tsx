@@ -27,7 +27,7 @@ const ProgressSkill = React.forwardRef<HTMLDivElement, ProgressSkillProps>(
         </div>
         <div className="h-2 bg-secondary rounded-full overflow-hidden">
           <div
-            className="h-full bg-gradient-primary rounded-full transition-all duration-1000 ease-out"
+            className="h-full gradient-primary rounded-full transition-all duration-1000 ease-out"
             style={{ width: `${animatedValue}%` }}
           />
         </div>

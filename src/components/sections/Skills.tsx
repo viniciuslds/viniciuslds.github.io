@@ -17,10 +17,10 @@ export const Skills = () => {
       title: "Backend Development",
       color: "text-primary",
       skills: [
-        { name: "Python/Django", level: 90 },
-        { name: "JavaScript/Node.js", level: 85 },
-        { name: "RESTful APIs", level: 88 },
-        { name: "Microserviços", level: 75 }
+        { name: "Python/Django", level: 60 },
+        { name: "JavaScript/Node.js", level: 50 },
+        { name: "RESTful APIs", level: 50 },
+        { name: "Microserviços", level: 70 }
       ]
     },
     {
@@ -28,10 +28,10 @@ export const Skills = () => {
       title: "Mobile Development", 
       color: "text-accent",
       skills: [
-        { name: "Flutter/Dart", level: 95 },
-        { name: "App Architecture", level: 85 },
-        { name: "State Management", level: 80 },
-        { name: "Native Integrations", level: 75 }
+        { name: "Flutter/Dart", level: 75 },
+        { name: "App Architecture", level: 75 },
+        { name: "State Management", level: 70 },
+        { name: "Native Integrations", level: 70 }
       ]
     },
     {
@@ -39,10 +39,10 @@ export const Skills = () => {
       title: "Banco de Dados",
       color: "text-success",
       skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 80 },
-        { name: "Database Design", level: 85 },
-        { name: "SQL Optimization", level: 75 }
+        { name: "PostgreSQL", level: 80 },
+        { name: "MongoDB", level: 60 },
+        { name: "Database Design", level: 70 },
+        { name: "SQL Optimization", level: 70 }
       ]
     },
     {
@@ -50,10 +50,10 @@ export const Skills = () => {
       title: "DevOps & Cloud",
       color: "text-warning",
       skills: [
-        { name: "Docker", level: 80 },
-        { name: "Git/GitHub", level: 95 },
+        { name: "Docker", level: 70 },
+        { name: "Git/GitHub", level: 75 },
         { name: "CI/CD", level: 70 },
-        { name: "Linux", level: 75 }
+        { name: "Linux", level: 60 }
       ]
     },
     {
