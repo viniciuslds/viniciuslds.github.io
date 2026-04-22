@@ -47,23 +47,31 @@ export const Hero = () => {
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button size="lg" className="gradient-primary hover-lift">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Entre em Contato
+                <Button size="lg" className="gradient-primary hover-lift" asChild>
+                  <a href="#contact">
+                    <Mail className="w-4 h-4 mr-2" />
+                    Entre em Contato
+                  </a>
                 </Button>
-                <Button variant="outline" size="lg" className="hover-lift">
-                  <Download className="w-4 h-4 mr-2" />
-                  Download CV
+                <Button variant="outline" size="lg" className="hover-lift" asChild>
+                  <a href="https://linkedin.com/in/viniciuslimadasilvayuichivls" target="_blank" rel="noopener noreferrer">
+                    <Download className="w-4 h-4 mr-2" />
+                    Ver LinkedIn
+                  </a>
                 </Button>
               </div>
               
               {/* Social links */}
               <div className="flex justify-center lg:justify-start gap-4 pt-4">
-                <Button variant="ghost" size="sm" className="hover-glow">
-                  <Github className="w-5 h-5" />
+                <Button variant="ghost" size="sm" className="hover-glow" asChild>
+                  <a href="https://github.com/viniciuslds" target="_blank" rel="noopener noreferrer">
+                    <Github className="w-5 h-5" />
+                  </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="hover-glow">
-                  <Linkedin className="w-5 h-5" />
+                <Button variant="ghost" size="sm" className="hover-glow" asChild>
+                  <a href="https://linkedin.com/in/viniciuslimadasilvayuichivls" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="w-5 h-5" />
+                  </a>
                 </Button>
               </div>
             </div>

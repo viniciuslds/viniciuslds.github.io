@@ -1,0 +1,111 @@
+﻿From f8278428f98dec6e0ad979b35778e0a0a1f3311d Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Wed, 22 Apr 2026 18:20:51 +0000
+Subject: [PATCH] Fix GitHub Pages deploy and update portfolio links
+
+---
+ src/components/sections/Contact.tsx | 11 +++++++----
+ src/components/sections/Hero.tsx    | 28 ++++++++++++++++++----------
+ src/components/sections/Skills.tsx  |  2 +-
+ vite.config.ts                      |  2 +-
+ 4 files changed, 27 insertions(+), 16 deletions(-)
+
+diff --git a/src/components/sections/Contact.tsx b/src/components/sections/Contact.tsx
+index a4f9a6c..d77b4e9 100644
+--- a/src/components/sections/Contact.tsx
++++ b/src/components/sections/Contact.tsx
+@@ -123,13 +123,16 @@ export const Contact = () => {
+                       LinkedIn
+                     </a>
+                   </Button>
+-                  <Button 
+-                    variant="outline" 
++                  <Button
++                    variant="outline"
+                     size="lg"
+                     className="hover-glow"
++                    asChild
+                   >
+-                    <Github className="w-5 h-5 mr-2" />
+-                    GitHub
++                    <a href="https://github.com/viniciuslds" target="_blank" rel="noopener noreferrer">
++                      <Github className="w-5 h-5 mr-2" />
++                      GitHub
++                    </a>
+                   </Button>
+                 </div>
+               </div>
+diff --git a/src/components/sections/Hero.tsx b/src/components/sections/Hero.tsx
+index c3cde41..3b02c90 100644
+--- a/src/components/sections/Hero.tsx
++++ b/src/components/sections/Hero.tsx
+@@ -47,23 +47,31 @@ export const Hero = () => {
+               
+               {/* CTA Buttons */}
+               <div className="flex flex-col sm:flex-row gap-4 pt-4">
+-                <Button size="lg" className="gradient-primary hover-lift">
+-                  <Mail className="w-4 h-4 mr-2" />
+-                  Entre em Contato
++                <Button size="lg" className="gradient-primary hover-lift" asChild>
++                  <a href="#contact">
++                    <Mail className="w-4 h-4 mr-2" />
++                    Entre em Contato
++                  </a>
+                 </Button>
+-                <Button variant="outline" size="lg" className="hover-lift">
+-                  <Download className="w-4 h-4 mr-2" />
+-                  Download CV
++                <Button variant="outline" size="lg" className="hover-lift" asChild>
++                  <a href="https://linkedin.com/in/viniciuslimadasilvayuichivls" target="_blank" rel="noopener noreferrer">
++                    <Download className="w-4 h-4 mr-2" />
++                    Ver LinkedIn
++                  </a>
+                 </Button>
+               </div>
+               
+               {/* Social links */}
+               <div className="flex justify-center lg:justify-start gap-4 pt-4">
+-                <Button variant="ghost" size="sm" className="hover-glow">
+-                  <Github className="w-5 h-5" />
++                <Button variant="ghost" size="sm" className="hover-glow" asChild>
++                  <a href="https://github.com/viniciuslds" target="_blank" rel="noopener noreferrer">
++                    <Github className="w-5 h-5" />
++                  </a>
+                 </Button>
+-                <Button variant="ghost" size="sm" className="hover-glow">
+-                  <Linkedin className="w-5 h-5" />
++                <Button variant="ghost" size="sm" className="hover-glow" asChild>
++                  <a href="https://linkedin.com/in/viniciuslimadasilvayuichivls" target="_blank" rel="noopener noreferrer">
++                    <Linkedin className="w-5 h-5" />
++                  </a>
+                 </Button>
+               </div>
+             </div>
+diff --git a/src/components/sections/Skills.tsx b/src/components/sections/Skills.tsx
+index 7a3f1f3..8707c1f 100644
+--- a/src/components/sections/Skills.tsx
++++ b/src/components/sections/Skills.tsx
+@@ -136,7 +136,7 @@ export const Skills = () => {
+             
+             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+               <div className="space-y-2">
+-                <div className="text-3xl font-bold text-primary">3+</div>
++                <div className="text-3xl font-bold text-primary">4+</div>
+                 <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+               </div>
+               <div className="space-y-2">
+diff --git a/vite.config.ts b/vite.config.ts
+index 2c2bb91..d2de991 100644
+--- a/vite.config.ts
++++ b/vite.config.ts
+@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
+ 
+ // https://vitejs.dev/config/
+ export default defineConfig(({ mode }) => ({
+-  base: mode === "production" ? "/vinicius-silva-portfolio/" : "/",
++  base: "/",
+   server: {
+     host: "::",
+     port: 8080,
+-- 
+2.43.0

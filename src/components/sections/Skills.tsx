@@ -136,7 +136,7 @@ export const Skills = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-primary">3+</div>
+                <div className="text-3xl font-bold text-primary">4+</div>
                 <div className="text-sm text-muted-foreground">Anos de Experiência</div>
               </div>
               <div className="space-y-2">
